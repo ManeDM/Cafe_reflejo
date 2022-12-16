@@ -7,6 +7,11 @@
   flex-direction: row
   justify-content: space-around
   background: #2F1B1B
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  z-index: 99
 
 
 .logo 
@@ -30,7 +35,7 @@
   font-size: 17px
   left: 20px  
 
-.cart__section 
+.cart__section
   display: flex
   align-items: center
   width: 150px
@@ -44,6 +49,16 @@
   box-sizing: border-box
   margin: 0 0 0 -3.5rem
   float: right
+
+.cart__section:hover
+    background-color: transparent
+    color: #ddcd8e
+    border: 2px solid #ddcd8e
+    border: 2.5px solid #ddcd8e
+ 
+
+
+  
   
 
 .cart__section img 
