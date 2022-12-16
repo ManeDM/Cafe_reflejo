@@ -9,6 +9,7 @@ import { AboutUsComponent } from './Shared/about-us/about-us.component';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { WievCartComponent } from './Detail/wiev-cart/wiev-cart.component';
 import { HeroSectionComponent } from './Shared/hero-section/hero-section.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HeroSectionComponent } from './Shared/hero-section/hero-section.compone
     HeroSectionComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
