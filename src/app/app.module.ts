@@ -8,6 +8,7 @@ import { CartComponent } from './Shared/cart/cart.component';
 import { AboutUsComponent } from './Shared/about-us/about-us.component';
 import { FooterComponent } from './Shared/footer/footer.component';
 import { WievCartComponent } from './Detail/wiev-cart/wiev-cart.component';
+import { HeroSectionComponent } from './Shared/hero-section/hero-section.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { WievCartComponent } from './Detail/wiev-cart/wiev-cart.component';
     CartComponent,
     AboutUsComponent,
     FooterComponent,
-    WievCartComponent
+    WievCartComponent,
+    HeroSectionComponent
   ],
   imports: [
     BrowserModule
