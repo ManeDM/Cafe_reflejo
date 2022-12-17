@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'header',
@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.sass']
 })
 export class HeaderComponent implements OnInit {
-  menuButton: HTMLElement:
-  menur: HTMLElement;
+  menuButton: ElementRef;
+  menu: ElementRef;
+
+  constructor (private elementRef: ElementRef)
 
   ngOnInit() {
     this.menuButton = document.querySelector('menu-button');
