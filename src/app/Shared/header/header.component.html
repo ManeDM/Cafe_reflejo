@@ -1,13 +1,14 @@
-<nav class="nav__bar">
-    <button class="menu-button" #menuButton>
-      <img src="assets/icons/burguer.svg" alt="Menu">
-    </button>
-    <ul class="list__items" #menuItems>
-      <img class="logo" src="assets/icons/cafe_reflejo.svg" alt="Logo">
-      <li class="list__items">Inicio</li>
-      <li class="list__items">Productos</li>
-      <li class="list__items">Conocenos</li>
-      <li class="list__items">Contacto</li>
-      <a class="cart__section">Carrito<img src="assets/icons/cart_icon.svg" alt="Icono del carrito"></a>
-    </ul>
-  </nav>
+<nav class="nav__bar" [class.menu-closed]="navClass">
+  <button class="menu__button" (click)="toggleMenu()">
+    <img src="assets/icons/burguer.svg" alt="Menu" class="hamburguer" *ngIf="navClass === 'menu-closed'">
+    <img src="assets/icons/close.svg" alt="Menu" class="hamburguer-closed" *ngIf="navClass !== 'menu-closed'">
+  </button>
+  <img src="assets/icons/cafe_reflejo.svg" alt="Logo" class="logo-closed" *ngIf="navClass === 'menu-closed'">
+  <ul class="list__items" *ngIf="!hidden">
+    <li class="list__items">Inicio</li>
+    <li class="list__items">Productos</li>
+    <li class="list__items">Conocenos</li>
+    <li class="list__items">Contacto</li>
+    <a class="cart__section">Carrito<img src="assets/icons/cart_icon.svg" alt="Icono del carrito"></a>
+  </ul>
+</nav>
