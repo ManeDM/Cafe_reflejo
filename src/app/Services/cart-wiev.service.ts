@@ -6,16 +6,18 @@ import { products } from 'src/app/products';
   providedIn: 'root'
 })
 export class CartWievService {
+  
 
   products=products;
-  items: { id: number; name: string; price: number; weight: string; image: string; disponible: boolean; }[] = [];
+  items: { id: number; name: string; price: number; weight: string; image: string;  }[] = [];
+  
 
 
   constructor() { }
 
 
 
-  addToCart(product: { id: number; name: string; price: number; weight: string; image: string; disponible: boolean; }) {
+  addToCart(product: { id: number; name: string; price: number; weight: string; image: string; }) {
     this.items.push(product);
   }
 

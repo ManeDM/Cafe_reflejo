@@ -10,7 +10,8 @@ import { HeroSectionComponent } from './Shared/hero-section/hero-section.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductsComponent } from './Shared/products/products.component';
 import { CarritoComponent } from './Shared/carrito/carrito.component';
-import { AppRoutingModule } from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module';
+import { ListCartComponent } from './Shared/list-cart/list-cart.component'
 
 
 
@@ -23,7 +24,8 @@ import { AppRoutingModule } from './app-routing.module'
     FooterComponent,
     HeroSectionComponent,
     ProductsComponent,
-    CarritoComponent
+    CarritoComponent,
+    ListCartComponent
 
   ],
   imports: [
