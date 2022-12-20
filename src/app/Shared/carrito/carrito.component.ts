@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { products } from 'src/app/products';
+import { CartWievService } from 'src/app/Services/cart-wiev.service';
 
 @Component({
   selector: 'carrito',
@@ -8,11 +9,18 @@ import { products } from 'src/app/products';
 })
 export class CarritoComponent implements OnInit {
 
-  products=products
+  products=products;
+  cart=new CartWievService();
+
   constructor() {}
 
   ngOnInit(): void {
 
+  }
+
+  addToCart(product: { id: number; name: string; price: number; weight: string; image: string; disponible: boolean; }) {
+    this.cart.addToCart(product);
+    window.alert('Producto agregado' + product.name + product.weight)
   }
 
 }
