@@ -1,16 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from 'src/app/product'; // Importar el modelo de Producto
+import { Router } from '@angular/router';  // Importar el servicio Router
 import { CartService } from '../../Services/cart.service';  // Importar el servicio del carrito
 
 @Component({
-  selector: 'products',
+  selector: 'app-products',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.sass']
 })
 export class ProductsComponent implements OnInit {
   products: Product[] = [];  // Array de productos
 
-  constructor(private cartService: CartService) { }
+  constructor(
+    private cartService: CartService,
+    private router: Router  // Inyectar el servicio Router
+  ) { }
 
   ngOnInit(): void {
     this.products = [
@@ -25,4 +28,8 @@ export class ProductsComponent implements OnInit {
     this.cartService.addToCart(product);
   }
 
+  // Función para navegar hacia la vista del componente ViewCartComponent
+  viewCart() {
+    this.router.navigate(['/view-cart']);
+  }
 }
