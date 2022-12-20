@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { WievCartComponent } from './wiev-cart.component';
+import { CarritoComponent } from './carrito.component';
 
-describe('WievCartComponent', () => {
-  let component: WievCartComponent;
-  let fixture: ComponentFixture<WievCartComponent>;
+describe('CarritoComponent', () => {
+  let component: CarritoComponent;
+  let fixture: ComponentFixture<CarritoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ WievCartComponent ]
+      declarations: [ CarritoComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(WievCartComponent);
+    fixture = TestBed.createComponent(CarritoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
