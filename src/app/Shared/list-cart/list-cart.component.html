@@ -1,6 +1,10 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <div class="product" *ngFor="let item of items">
 <img class="coffe_bag" src="assets/product_images/{{item.image}}">
   <h2>{{item.name}}</h2>
   <h3>{{item.weight}}</h3>
   <h3><strong>Precio: </strong>{{item.price}}</h3>
+  <h4>Cantidad: {{item.amount}}</h4>
+  <span><a routerLink="/"><i class="material-icons ">delete</i></a></span>
 </div>

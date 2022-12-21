@@ -9,7 +9,7 @@ export class CartWievService {
   
 
   products=products;
-  items: { id: number; name: string; price: number; weight: string; image: string;  }[] = [];
+  items: { id: number; name: string; price: number; weight: string; image: string; amount: number  }[] = [];
   
 
 
@@ -17,7 +17,19 @@ export class CartWievService {
 
 
 
-  addToCart(product: { id: number; name: string; price: number; weight: string; image: string; }) {
+  addToCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number }) {
+    let found = false
+    
+    this.items.forEach((element)=>{
+      
+      if(element.id==product.id){
+       /*console.log("encontrado" + element.id)*/
+       found=true;
+       element.amount+=1
+      }
+    });
+
+    if(!found)
     this.items.push(product);
   }
 

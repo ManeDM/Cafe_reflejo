@@ -5,7 +5,8 @@ export const products=[
     price: 35000,
     weight:'250 Gr',
     image: 'coffe_bag.svg',
-    disponible: true,
+    available: true,
+    amount: 1,
   },
   {
     id:2,
@@ -13,7 +14,8 @@ export const products=[
     price: 68000,
     weight:'500 Gr',
     image: 'coffe_bag.svg',
-    disponible: true,
+    available: true,
+    amount: 1,
   },
   {
     id:3,
@@ -21,7 +23,8 @@ export const products=[
     price: 98000,
     weight:'1000 Gr',
     image: 'coffe_bag.svg',
-    disponible: true,
+    available: true,
+    amount: 1,
   },
   {
     id:4,
@@ -29,7 +32,8 @@ export const products=[
     price: 35000,
     weight:'250 Gr',
     image: 'coffe_bag.svg',
-    disponible: true,
+    available: true,
+    amount: 1,
   },
   {
     id:5,
@@ -37,7 +41,8 @@ export const products=[
     price: 68000,
     weight:'500 Gr',
     image: 'coffe_bag.svg',
-    disponible: true,
+    available: true,
+    amount: 1,
   },
   {
     id:6,
@@ -45,7 +50,8 @@ export const products=[
     price: 98000,
     weight:'1000 Gr',
     image: 'coffe_bag.svg',
-    disponible: true,
+    available: true,
+    amount: 1,
   },
   {
     id:7,
@@ -53,7 +59,8 @@ export const products=[
     price: 32000,
     weight:'250 Gr',
     image: 'coffe_bag.svg',
-    disponible: true,
+    available: true,
+    amount: 1,
   },
   {
     id:8,
@@ -61,7 +68,8 @@ export const products=[
     price: 60000,
     weight:'500 Gr',
     image: 'coffe_bag.svg',
-    disponible: true,
+    available: true,
+    amount: 1,
   },
   {
     id:9,
@@ -69,7 +77,8 @@ export const products=[
     price: 92000,
     weight:'1000 Gr',
     image: 'coffe_bag.svg',
-    disponible: true,
+    available: true,
+    amount: 1,
   },
  
  

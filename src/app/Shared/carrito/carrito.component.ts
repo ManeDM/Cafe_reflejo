@@ -18,7 +18,7 @@ export class CarritoComponent implements OnInit {
 
   }
 
-  addToCart(product: { id: number; name: string; price: number; weight: string; image: string; }) {
+  addToCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number  }) {
   this.cart.addToCart(product);
   window.alert('Producto agregado' + product.name + product.weight)
 }

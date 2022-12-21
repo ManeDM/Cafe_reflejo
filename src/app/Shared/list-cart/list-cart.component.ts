@@ -9,7 +9,7 @@ import { CartWievService } from 'src/app/Services/cart-wiev.service';
 export class ListCartComponent implements OnInit{
 
   
-  items:{ id: number; name: string; price: number; weight: string; image: string; }[]=[];
+  items:{ id: number; name: string; price: number; weight: string; image: string; amount: number  }[]=[];
   constructor (private cart:CartWievService) {}
 
   ngOnInit(): void {
