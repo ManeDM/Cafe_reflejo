@@ -10,15 +10,17 @@ export class ListCartComponent implements OnInit{
 
   
   items:{ id: number; name: string; price: number; weight: string; image: string; amount: number  }[]=[];
+  totalPrice: number | undefined;
   constructor (private cart:CartWievService) {}
 
   ngOnInit(): void {
     this.items=this.cart.CartList();
-    console.log(this.items)
+    this.totalPrice = this.cart.totalPrice();
   }
   
   deleteProduct(product: { id: number; name: string; price: number; weight: string; image: string; amount: number }) {
     this.cart.removeFromCart(product);
-    this.items = this.cart.CartList();
+    
+    
   }
 }
