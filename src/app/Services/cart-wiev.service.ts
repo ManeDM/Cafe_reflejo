@@ -33,10 +33,16 @@ export class CartWievService {
     this.items.push(product);
   }
 
-  RemoveToCart(){
-    this.items=[];
-    return this.items;
+  removeFromCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number }) {
+    const index = this.items.findIndex(item => item.id === product.id);
+    if (index !== -1) {
+      this.items[index].amount--;
+      if (this.items[index].amount === 0) {
+        this.items.splice(index, 1);
+      }
+    }
   }
+ 
 
   CartList(){
     return this.items

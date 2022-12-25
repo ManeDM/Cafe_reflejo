@@ -16,5 +16,9 @@ export class ListCartComponent implements OnInit{
     this.items=this.cart.CartList();
     console.log(this.items)
   }
-
+  
+  deleteProduct(product: { id: number; name: string; price: number; weight: string; image: string; amount: number }) {
+    this.cart.removeFromCart(product);
+    this.items = this.cart.CartList();
+  }
 }
