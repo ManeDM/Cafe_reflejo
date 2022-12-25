@@ -20,7 +20,7 @@ export class ListCartComponent implements OnInit{
   
   deleteProduct(product: { id: number; name: string; price: number; weight: string; image: string; amount: number }) {
     this.cart.removeFromCart(product);
-    
-    
+    this.items = this.cart.CartList();
+    this.totalPrice = this.cart.totalPrice();
   }
 }

@@ -7,6 +7,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
+    category: 'Café Molido',
   },
   {
     id:2,
@@ -16,6 +17,8 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
+    category: 'Café Molido',
+    
   },
   {
     id:3,
@@ -25,6 +28,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
+    category: 'Café Molido',
   },
   {
     id:4,
@@ -34,6 +38,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
+    category: 'Grano',
   },
   {
     id:5,
@@ -43,6 +48,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
+    category: 'Grano',
   },
   {
     id:6,
@@ -52,6 +58,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
+    category: 'Grano',
   },
   {
     id:7,
@@ -61,6 +68,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
+    category: 'Grano',
   },
   {
     id:8,
@@ -70,6 +78,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
+    category: 'Grano',
   },
   {
     id:9,
@@ -79,6 +88,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
+    category: 'Grano',
   },
  
  

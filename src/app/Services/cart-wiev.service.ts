@@ -44,7 +44,7 @@ export class CartWievService {
   }
  
   totalPrice() {
-    return this.items.reduce((total, item) => total + item.price * item.amount, );
+    return this.items.reduce((total, item) => total + item.price * item.amount, 0);
   }
 
   CartList(){
