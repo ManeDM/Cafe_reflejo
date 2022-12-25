@@ -18,21 +18,21 @@ export class CartWievService {
 
 
   addToCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number }) {
-    let found = false
-    
-    this.items.forEach((element)=>{
-      
-      if(element.id==product.id){
-       found=true;
-       element.amount+=1
-       element.subtotal = element.price * element.amount;
+    let found = false;
+  
+    this.items.forEach((element) => {
+      if (element.id === product.id) {
+        found = true;
+        element.amount += 1;
+        element.subtotal = element.price * element.amount;
       }
     });
-
-    if(!found)
-    
-    product.subtotal = product.price * product.amount;
-    this.items.push(product);
+  
+    if (!found) {
+      product.amount = 1;
+      product.subtotal = product.price * product.amount;
+      this.items.push(product);
+    }
   }
 
   removeFromCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number  }) {
