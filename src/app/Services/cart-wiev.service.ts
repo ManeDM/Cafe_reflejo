@@ -9,7 +9,7 @@ export class CartWievService {
   
 
   products=products;
-  items: { id: number; name: string; price: number; weight: string; image: string; amount: number  }[] = [];
+  items: { id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number; }[] = [];
   
 
 
@@ -17,23 +17,25 @@ export class CartWievService {
 
 
 
-  addToCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number }) {
+  addToCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number }) {
     let found = false
     
     this.items.forEach((element)=>{
       
       if(element.id==product.id){
-       /*console.log("encontrado" + element.id)*/
        found=true;
        element.amount+=1
+       element.subtotal = element.price * element.amount;
       }
     });
 
     if(!found)
+    
+    product.subtotal = product.price * product.amount;
     this.items.push(product);
   }
 
-  removeFromCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number }) {
+  removeFromCart(product: { id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number  }) {
     const index = this.items.findIndex(item => item.id === product.id);
     if (index !== -1) {
       this.items[index].amount--;
@@ -50,4 +52,14 @@ export class CartWievService {
   CartList(){
     return this.items
   }
+
+  reduceAmount(product: { id: number; name: string; price: number; weight: string; image: string; amount: number }) {
+    this.items.forEach((item) => {
+      if (item.id === product.id) {
+        item.amount--;
+      }
+    });
+  }
+
+  
 }
