@@ -29,5 +29,6 @@ removeProduct(
   product: { id: number; name: string; price: number; weight: string; image: string; amount: number }
 ) {
   this.items = this.items.filter((item) => item.id !== product.id);
+  this.totalPrice = this.cart.totalPrice();
 }
 }
