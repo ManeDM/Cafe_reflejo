@@ -1,3 +1,8 @@
+<select class="filter" (change)="filterProducts()" [(ngModel)]="selectedCategory">
+  <option value="">Todos los Productos</option>
+  <option value="Molido">Molido</option>
+  <option value="Grano">Grano</option>
+</select>
 <div class="product" *ngFor="let product of products">
   <img src="assets/product_images/{{product.image}}">
   <h2>{{product.name}}</h2>

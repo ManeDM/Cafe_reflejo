@@ -12,6 +12,7 @@ import { ProductsComponent } from './Shared/products/products.component';
 import { CarritoComponent } from './Shared/carrito/carrito.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ListCartComponent } from './Shared/list-cart/list-cart.component'
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -32,7 +33,7 @@ import { ListCartComponent } from './Shared/list-cart/list-cart.component'
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-   
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

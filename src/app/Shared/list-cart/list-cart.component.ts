@@ -10,7 +10,7 @@ export class ListCartComponent implements OnInit{
 
   
   items:{ id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number   }[]=[];
-  totalPrice: number | undefined;
+  totalPrice: number = 0;
   constructor (public cart:CartWievService) {}
 
   ngOnInit(): void {
@@ -18,17 +18,23 @@ export class ListCartComponent implements OnInit{
     this.totalPrice = this.cart.totalPrice();
   }
   
-  deleteProduct(product: { id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number  }) {
+  deleteProduct(product: { price: number; amount: number; subtotal: number  }) {
     product.amount--;
+    product.subtotal = product.price * product.amount;
     if (product.amount === 0) {
       this.items = this.items.filter((item) => item !== product);
+      
     
   }
+  
 }
 removeProduct(
-  product: { id: number; name: string; price: number; weight: string; image: string; amount: number }
+  product: { id: number; }
 ) {
   this.items = this.items.filter((item) => item.id !== product.id);
   this.totalPrice = this.cart.totalPrice();
 }
+
+
+
 }

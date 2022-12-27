@@ -7,7 +7,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
-    category: 'Café Molido',
+    category: 'Molido',
     subtotal: 0,
   },
   {
@@ -18,7 +18,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
-    category: 'Café Molido',
+    category: 'Molido',
     subtotal: 0,
     
   },
@@ -30,7 +30,7 @@ export const products=[
     image: 'coffe_bag.svg',
     available: true,
     amount: 1,
-    category: 'Café Molido',
+    category: 'Molido',
     subtotal: 0,
   },
   {
