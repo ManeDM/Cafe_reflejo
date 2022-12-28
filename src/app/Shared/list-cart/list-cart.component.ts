@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartWievService } from 'src/app/Services/cart-wiev.service';
+import { WPServiceService } from 'src/app/Services/wp-service.service';
 
 @Component({
   selector: 'app-list-cart',
@@ -11,7 +12,7 @@ export class ListCartComponent implements OnInit{
   
   items:{ id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number   }[]=[];
   totalPrice: number = 0;
-  constructor (public cart:CartWievService) {}
+  constructor (public cart:CartWievService, private wpService: WPServiceService) {}
 
   ngOnInit(): void {
     this.items=this.cart.CartList();
@@ -23,11 +24,33 @@ export class ListCartComponent implements OnInit{
     product.subtotal = product.price * product.amount;
     if (product.amount === 0) {
       this.items = this.items.filter((item) => item !== product);
+
+      let message = '';
+      this.items.forEach(item => {
+        message += `- ${item.name} x${item.amount} = ${item.subtotal}\n`;
+      });
+      message += `Total: ${this.totalPrice}`;
+
+      //llamada del servicio de wp
+      this.wpService.contact(message);
       
     
   }
   
 }
+sendWhatsapp() {
+  let message = '';
+  this.items.forEach(item => {
+    message += `- ${item.name} x${item.amount} (${item.weight}) = ${item.subtotal}\n`;
+  });
+  message += `Total: ${this.totalPrice}`;
+
+
+  const url = this.wpService.contact(message);
+  console.log(url);
+  window.open(url, '_blank');
+}
+
 removeProduct(
   product: { id: number; }
 ) {
