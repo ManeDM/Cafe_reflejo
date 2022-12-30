@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CartWievService } from 'src/app/Services/cart-wiev.service';
 import { WPServiceService } from 'src/app/Services/wp-service.service';
 
+
 @Component({
   selector: 'app-list-cart',
   templateUrl: './list-cart.component.html',
@@ -12,7 +13,7 @@ export class ListCartComponent implements OnInit{
   
   items:{ id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number   }[]=[];
   totalPrice: number = 0;
-  constructor (public cart:CartWievService, private wpService: WPServiceService) {}
+  constructor (public cart:CartWievService, private wpService: WPServiceService, ) {}
 
   ngOnInit(): void {
     this.items=this.cart.CartList();
