@@ -1,18 +1,5 @@
-<nav class="nav__bar" [class.menu-closed]="navClass">
-  <div class="logo-container">
-    <img src="assets/icons/cafe_reflejo.svg" alt="Logo" class="logo-closed" *ngIf="navClass === 'menu-closed'">
+<div><a [routerLink]="['']"><p class="products">Productos</p></a>
+  <a routerLink="/lista_carrito"><i class="material-icons add_shopping_cart">add_shopping_cart</i></a>
   </div>
-  <button class="menu__button" (click)="toggleMenu()">
-    <img src="assets/icons/burguer.svg" alt="Menu" class="hamburguer" *ngIf="navClass === 'menu-closed'">
-    <img src="assets/icons/close.svg" alt="Menu" class="hamburguer-closed" *ngIf="navClass !== 'menu-closed'">
-  </button>
-  <div class="list">
-  <ul class="list__items" *ngIf="navClass !== 'menu-closed'">
-    <li class="list__items">Inicio</li>
-    <li class="list__items">Productos</li>
-    <li class="list__items">Conocenos</li>
-    <li class="list__items">Contacto</li>
-    <a class="cart__section">Carrito<img src="assets/icons/cart_icon.svg" alt="Icono del carrito"></a>
-  </ul>
-</div>
-</nav>
+  
+  
