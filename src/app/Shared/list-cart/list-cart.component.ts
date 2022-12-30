@@ -18,6 +18,7 @@ export class ListCartComponent implements OnInit{
     this.items=this.cart.CartList();
     this.totalPrice = this.cart.totalPrice();
   }
+
   
   deleteProduct(product: { price: number; amount: number; subtotal: number  }) {
     product.amount--;
@@ -32,32 +33,25 @@ export class ListCartComponent implements OnInit{
       message += `Total: ${this.totalPrice}`;
 
       //llamada del servicio de wp
-      this.wpService.contact(message);
-      
-    
-  }
-  
-}
-sendWhatsapp() {
-  let message = '';
-  this.items.forEach(item => {
-    message += `- ${item.name} x${item.amount} (${item.weight}) = ${item.subtotal}\n`;
-  });
-  message += `Total: ${this.totalPrice}`;
+      this.wpService.contact(message)}
+   }
+
+   sendWhatsapp() {
+     let message = '';
+     this.items.forEach(item => {
+     message += `- ${item.name} x${item.amount} (${item.weight}) = ${item.subtotal}\n`;
+      });
+
+       message += `Total: ${this.totalPrice}`;
 
 
-  const url = this.wpService.contact(message);
-  console.log(url);
-  window.open(url, '_blank');
-}
+       const url = this.wpService.contact(message);
+       console.log(url);
+       window.open(url, '_blank');
+   }
 
-removeProduct(
-  product: { id: number; }
-) {
-  this.items = this.items.filter((item) => item.id !== product.id);
-  this.totalPrice = this.cart.totalPrice();
-}
-
-
-
+   removeProduct(product: { id: number; }) {
+     this.items = this.items.filter((item) => item.id !== product.id);
+     this.totalPrice = this.cart.totalPrice();
+   }
 }
