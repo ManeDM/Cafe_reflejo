@@ -10,9 +10,12 @@ import { HeroSectionComponent } from './Shared/hero-section/hero-section.compone
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { CarritoComponent } from './Shared/carrito/carrito.component';
-import { AppRoutingModule } from './app-routing.module';
+import { RoutingModule } from './app-routing.module';
 import { ListCartComponent } from './Shared/list-cart/list-cart.component'
 import { FormsModule } from '@angular/forms';
+
+import { CommonModule } from '@angular/common';
+import { SwiperModule } from "swiper/angular";
 
 
 
@@ -32,8 +35,11 @@ import { FormsModule } from '@angular/forms';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule,
-    FormsModule
+    RoutingModule,
+    FormsModule,
+    CommonModule,
+    SwiperModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

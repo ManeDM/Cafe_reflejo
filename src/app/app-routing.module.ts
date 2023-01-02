@@ -4,6 +4,7 @@ import { CarritoComponent } from '../app/Shared/carrito/carrito.component'
 import { ListCartComponent } from './Shared/list-cart/list-cart.component';
 
 const routes: Routes = [
+  
   {path:'',component:CarritoComponent},
 
   {path:'lista_carrito',component:ListCartComponent},
@@ -14,4 +15,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class RoutingModule { }

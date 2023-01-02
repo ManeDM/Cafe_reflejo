@@ -1,3 +1,4 @@
+<div class="bg_cart">
 <select class="filter" (change)="filterProducts()" [(ngModel)]="selectedCategory">
   <option value="">Todos los Productos</option>
   <option value="Molido">Molido</option>
@@ -9,4 +10,5 @@
   <h3>{{product.weight}}</h3>
   <h3><strong>Precio: </strong>{{product.price}}</h3>
   <i class="material-icons add_shopping_cart" (click)="addToCart(product)">add_shopping_cart</i>
+</div>
 </div>
