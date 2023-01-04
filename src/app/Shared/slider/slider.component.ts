@@ -10,15 +10,11 @@ import { Component, OnInit,  } from "@angular/core";
 
 export class SliderComponent implements OnInit {
   currentSlide = 0;
-
+  
   slides = [
     'assets/property/property_01.jpeg',
     'assets/property/property_02.jpeg',
-    'assets/property/property_01.jpeg',
-    'assets/property/property_02.jpeg',
-    'assets/property/property_01.jpeg',
-    'assets/property/property_02.jpeg',    
-    
+    'assets/property/property_03.jpeg'
   ];
 
   constructor() { }
