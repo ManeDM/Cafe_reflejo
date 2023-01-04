@@ -14,7 +14,7 @@ export class SliderComponent implements OnInit {
   slides = [
     'assets/property/property_01.jpeg',
     'assets/property/property_02.jpeg',
-    'assets/property/property_03.jpeg'
+    'assets/property/property_03.jpg'
   ];
 
   constructor() { }
