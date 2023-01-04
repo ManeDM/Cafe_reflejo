@@ -1,8 +1,11 @@
 <div class="slider">
-    <div class="slide"><img src="assets/property/property_01.jpeg" alt="Property 01"></div>
-    <div class="slide"><img src="assets/property/property_02.jpeg" alt="Property 02"></div>
-    <div class="slide"><img src="assets/property/property_03.jpeg" alt="Property 03"></div>
-    <button class="btn" (click)="prevSlide()"><i class="fas fa-arrow-left"></i></button>
-    <button class="btn" (click)="nextSlide()"><i class="fas fa-arrow-right"></i></button>
+  <div class="slider__item" *ngFor="let slide of slides; index as i">
+    <img [src]="slide" alt="Slide" *ngIf="i === currentSlide">
   </div>
- 
+</div>
+<button class="slider__nav slider__nav--prev" (click)="prevSlide()">
+  <i class="fas fa-arrow-left"></i>
+</button>
+<button class="slider__nav slider__nav--next" (click)="nextSlide()">
+  <i class="fas fa-arrow-right"></i>
+</button>

@@ -1,31 +1,42 @@
-*
+.slider img
   display: flex
-  justify-content: center
-  align-items: center
+  overflow: hidden
+  width: 100%
+  height: 100%
+  object-fit: cover
+
+
+
+   
+
   
 
-
-.slider 
-  overflow: auto
-  width: 900px
-  height: 400px
-  
-
-
-.slide 
-  position: relative
-  top: 0
-  left: 0
-  transition: all 0.5s
-
-
-
-.btn
-  color: #fff
-  font-size: 30px
-  position: relative
+.slider__nav 
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
   background: none
+  border: none
+  outline: none
+  cursor: pointer
+
+  &--prev 
+    left: 20px
+    top: 23rem
   
+
+  &--next 
+    right: 20px
+    top: 23rem
+   
   
+.fas
+  color: #462b2b
+  background: #fff
+  border-radius: 50px
+  font-size: 30px
+  padding: 4.5px
+  
+
   
 
