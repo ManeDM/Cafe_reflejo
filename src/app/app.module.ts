@@ -15,7 +15,7 @@ import { ListCartComponent } from './Shared/list-cart/list-cart.component'
 import { FormsModule } from '@angular/forms';
 
 import { CommonModule } from '@angular/common';
-import { SwiperModule } from "swiper/angular";
+
 
 
 
@@ -38,7 +38,7 @@ import { SwiperModule } from "swiper/angular";
     RoutingModule,
     FormsModule,
     CommonModule,
-    SwiperModule
+   
 
   ],
   providers: [],
