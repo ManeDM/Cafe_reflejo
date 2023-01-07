@@ -13,7 +13,7 @@ export class ListCartComponent implements OnInit{
   
   items:{ id: number; name: string; price: number; weight: string; image: string; amount: number; subtotal: number   }[]=[];
   totalPrice: number = 0;
-  constructor (public cart:CartWievService, private wpService: WPServiceService, ) {}
+  constructor (public cart:CartWievService, private wpService: WPServiceService,) {}
 
   ngOnInit(): void {
     this.items=this.cart.CartList();
@@ -33,7 +33,7 @@ export class ListCartComponent implements OnInit{
       });
       message += `Total: ${this.totalPrice}`;
 
-      //llamada del servicio de wp
+      
       this.wpService.contact(message)}
    }
 

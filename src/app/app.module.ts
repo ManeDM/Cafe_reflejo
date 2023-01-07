@@ -15,6 +15,12 @@ import { ListCartComponent } from './Shared/list-cart/list-cart.component'
 import { FormsModule } from '@angular/forms';
 
 import { CommonModule } from '@angular/common';
+import { Routes } from '@angular/router';
+import { DetailsComponent } from './details/details.component';
+
+const routes: Routes =[
+  {path:'lista_carrito',component:ListCartComponent},
+]
 
 
 
@@ -29,7 +35,8 @@ import { CommonModule } from '@angular/common';
     HeroSectionComponent,
     
     CarritoComponent,
-    ListCartComponent
+    ListCartComponent,
+    DetailsComponent
 
   ],
   imports: [
@@ -38,6 +45,7 @@ import { CommonModule } from '@angular/common';
     RoutingModule,
     FormsModule,
     CommonModule,
+    
    
 
   ],
