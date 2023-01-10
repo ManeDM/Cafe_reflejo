@@ -15,12 +15,10 @@ import { ListCartComponent } from './Shared/list-cart/list-cart.component'
 import { FormsModule } from '@angular/forms';
 
 import { CommonModule } from '@angular/common';
-import { Routes } from '@angular/router';
-import { DetailsComponent } from './details/details.component';
+import { HomeComponent } from './home/home.component';
 
-const routes: Routes =[
-  {path:'lista_carrito',component:ListCartComponent},
-]
+
+
 
 
 
@@ -36,8 +34,8 @@ const routes: Routes =[
     
     CarritoComponent,
     ListCartComponent,
-    DetailsComponent
-
+    HomeComponent,
+    
   ],
   imports: [
     BrowserModule,

@@ -4,7 +4,7 @@ import { WPServiceService } from 'src/app/Services/wp-service.service';
 
 
 @Component({
-  selector: 'app-list-cart',
+  selector: 'list-cart',
   templateUrl: './list-cart.component.html',
   styleUrls: ['./list-cart.component.sass']
 })
