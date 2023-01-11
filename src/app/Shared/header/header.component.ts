@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   
+  show: boolean = true;
+
+  showTeam(){
+    if(this.show){
+       this.show = false;
+    }
+    else{
+      this.show = true;
+    }
+  }
 
   constructor() { }
 

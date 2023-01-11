@@ -1,10 +1,18 @@
-<div>
-  <a [routerLink]="['']"><img src="assets/icons/logo_white.svg" class="logo"></a>
+<i class="bars"><img (click)="showTeam()" src="assets/icons/burguer.svg" alt="Menu"></i>
+<a [routerLink]="['']"><img src="assets/icons/logo_white.svg" class="logo"></a>
+<div class="menu" *ngIf="show">
   <a [routerLink]="['/Inicio']" class="products" >Inicio</a>
   <a [routerLink]="['/Productos']" class="products">Productos</a>
   <a [routerLink]="['/Conocenos']"  class="products">Conocenos</a>
   <a [routerLink]="['/Contacto']"  class="products">Contacto</a>
   <a routerLink="/lista_carrito"><i class="material-icons add_shopping_cart">add_shopping_cart</i></a>
+
 </div>
+
+
+
+
+
+
   
   
