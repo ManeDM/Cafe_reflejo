@@ -39,6 +39,7 @@ A su vez las funcionalidades de la pagina se dan desde dos servicos llamados "Ca
 <ul>Carrito</ul>
 <ul>Abous Us</ul>
 <ul>Footer</ul>
+<ul>List-Cart</ul>
 </li>
 </ul>
 
@@ -97,54 +98,47 @@ En este componente muestra un primer plano dle producto y un frase de copy, no t
 
 <h3 align="center">Slider</h3>
 <p align="center">
-En este componente se muestra un carrusel de imagenes.
+En este componente se muestra un carrusel de imagenes, no tiene funcionalidad.
 </p>
 
-<h3 align="center">Poke-Search</h3>
+<h3 align="center">Carrito/h3>
 <p align="center">
 
-<img src="https://github.com/ManeDM/Pokedex/blob/main/src/assets/read_img/PokeSearch.jpeg" width="350px"> 
-
-</p>
-
-<p align="center">
-La función principal del poke-search este basada en dato de entrada que el usuario ponga en la barra de busqueda, gracias al decorador "@Output" podemos tomar valor de otro componentes esto nos permitira enlazar el buscador con la tabla de pokemons, a ese decorador le atribuimos una variable publica llamda "emmitSearch" que servira de puente entre el Input de data puesto en el HTML o buscador, los valores recibidos atravez de la funcion de TS "eventEmmiter" son de tipo string.
-</p>
-
-<h3 align="center">Poke-Team</h3>
-<p align="center">
-
-<img src="https://github.com/ManeDM/Pokedex/blob/main/src/assets/read_img/Poke-Team.jpeg" width="350px"> 
-
-</p>
-
-El Poke-Team esta formado por tarjetas de los datos especificos de cada pokemon al que se hace referencia, hace uso en un NGif y una variable llamada show con una funcion asociada con base a valores booleanos que permiten generar el Switch que nos permite crear y destruir el componente en tiempo real, lo que nos permite enseñar y ocultar el equipo sin alterar la distribucion de los otros componentes.
-
-<h2 align="center">Pages y sus componentes</h2>
-
-<h3 align="center">Home</h3>
-
-<p align="center">
-
-<img src="https://github.com/ManeDM/Pokedex/blob/main/src/assets/read_img/HTML-Home.jpeg" width="350px"> 
-
-</p>
-
-La función principal Home es poder usar los datos del servicio empleados en todos los otros modulos, a su vez el componente HTML es la ruta principal donde se importan cada uno de los etiquetas que enlezan a los componentes.
-
-<p align="center">
-
-<img src="https://github.com/ManeDM/Pokedex/blob/main/src/assets/read_img/TS-Home.jpeg" width="350px"> 
-
-</p>
-
-
-<h3 align="center">Poke-Details</h3>
-<p align="center">
-
-<img src="https://github.com/ManeDM/Pokedex/blob/main/src/assets/read_img/Poke-Details.jpeg" width="350px"> 
+<img src="https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/readme_img/cart_component.png" width="400px"> 
 
 </p>
 
 <p align="center">
-En este componente se ubican los datos especifcios de cada pokemon, esto se hace mediante la creacion de una varaible privada que hace referencia el decorador "ActivateRoute", seuido a esto mediante el elemento "GET" creamos una función que nos permita enrutar los valores de las tarjetas mediante el uso de 3 constantes "ID" "POKEMON" y "NAME".
+El carrito cuenta con dos funciones básicas haciendo uso de del servicio previamente mencionado.
+
+addToCart() permite agregar productos al carrito.
+
+filterProducts() permite filtrar productos basandose en una categoria, esta funcion pinta en pantalla solo los productos filtrados.
+</p>
+
+<h3 align="center">About-us</h3>
+<p align="center">
+Descripcion de las condicones de csiembra y cultivo del cafe, no tiene funcionalidad.
+</p>
+
+<h3 align="center">Footer</h3>
+<p align="center">
+Datos de contacto, no tiene funcionalidad.
+</p>
+
+<h3 align="center">List-cart</h3>
+<p align="center">
+
+<img src="https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/readme_img/list_component.png" width="400px"> 
+
+</p>
+
+<p align="center">
+En este componente s establecen cuatro funcionalidades.
+
+deleteProduct() Permite borrar productos previamente cargados al carrito.
+
+sendWhatsapp() toma los dos servicios creados, el de wp permite cargar informacion llamado por el primer servicio y con esta info se envia la informacion de los costes y cantidades al vendedor.
+
+removeProduct() esta funcion permite calcular el valor de los subtotales y totales, conforme se van quitando productos.
+</p>
