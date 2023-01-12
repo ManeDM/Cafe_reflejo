@@ -82,21 +82,22 @@ skipLine() se encarga de enviar el mensaje al Wp del vendedor con los productos 
 
 <h2 align="center">Shared y sus componentes</h2>
 
-<h3 align="center">Poke-header</h3>
+<h3 align="center">Header</h3>
+
+<img src=https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/readme_img/Burgue_function.png width="400px"> 
 
 <p align="center">
-Es la cabecera general de la página, no tiene ninguna funcionalidad o logica programada.
+Es la cabecera general de la página, trabaja con un booleano y mediante la directiva *NgIf se abre o cierra el menu.
 </p>
 
-<h3 align="center">Poke-list</h3>
+<h3 align="center">Hero-section</h3>
 <p align="center">
-
-<img src="https://github.com/ManeDM/Pokedex/blob/main/src/assets/read_img/PokeList.jpeg" width="350px" > 
-
+En este componente muestra un primer plano dle producto y un frase de copy, no tiene funcionalidad.
 </p>
 
+<h3 align="center">Slider</h3>
 <p align="center">
-En este componente se crea un metodo privado que nos permitio usar el servicio anteriormente creado, posteriormente se crea un metodo publico capaz de recibir cualquier tipo de variable, el documento HTML hace uso de un "NGfor" para iterar el template del listado de pokemons y un "ngFOrOf" para precisar la varaible desde donde se van a iterar los pokemons en este casp "getAllPokiemons"
+En este componente se muestra un carrusel de imagenes.
 </p>
 
 <h3 align="center">Poke-Search</h3>
