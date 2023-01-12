@@ -8,7 +8,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 
 <h1 align="center">Café Reflejo</h1>
 
-<p align="center">
+<p align="center" width="150px">
 
 <img src="https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/icons/logo_white.svg" >
 
