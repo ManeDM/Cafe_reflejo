@@ -46,7 +46,7 @@ A su vez las funcionalidades de la pagina se dan desde dos servicos llamados "Ca
 
 <p align="center">
 
-<img src="https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/readme_img/Service_products.png" width="400px"> 
+<img src="https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/readme_img/Service_products.png" width="600px"> 
 
 </p>
 
