@@ -103,7 +103,7 @@ En este componente muestra un primer plano del producto y un frase de copy, no t
 En este componente se muestra un carrusel de imagenes, no tiene funcionalidad.
 </p>
 
-<h3 align="center">Carrito/h3>
+<h3 align="center">Carrito
 <p align="center">
 
 <img src="https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/readme_img/cart_component.png" width="400px" align="center"> 
