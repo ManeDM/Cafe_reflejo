@@ -16,11 +16,7 @@ import { FormsModule } from '@angular/forms';
 
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
-
-
-
-
-
+import { SwiperModule } from "swiper/angular";
 
 
 @NgModule({
@@ -43,6 +39,7 @@ import { HomeComponent } from './home/home.component';
     RoutingModule,
     FormsModule,
     CommonModule,
+    SwiperModule
     
    
 

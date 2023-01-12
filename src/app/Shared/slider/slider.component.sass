@@ -1,49 +1,45 @@
-.slider 
-  max-width: 800px
-  max-height: auto
-  margin: 0 auto
-  display: flex
-  overflow: hidden
-  height: 600px
-  object-fit: contain
+@import swiper/scss
+@import swiper/scss/navigation
+
+
+.swiper
   padding-top: 6rem
-  padding-bottom: 3.5rem
+  padding-bottom: 4rem
+  width: 80%
+  height: 130%
 
+
+.swiper-slide 
+  text-align: center
+  font-size: 18px
   
 
-.slider__nav 
-  position: absolute
-  top: 50%
-  transform: translateY(-50%)
-  background: none
-  border: none
-  outline: none
-  cursor: pointer
+.swiper-slide img 
+  display: block
+  width: 100%
+  height: auto
+  object-fit: cover
 
 
+@media screen and (max-width: 800px)
 
-  &--prev 
-    left: 7rem
-    padding-top: 60rem
-    
+  .swiper
+    width: 70%
+    height: 100%
+    margin-right: 9.3rem
 
-  
+@media screen and (max-width: 500px)
 
-  &--next 
-    right: 7rem
-    padding-top: 60rem
-    
-    
-   
-   
-  
-.fas
-  color: #462b2b
-  background: #fff
-  border-radius: 50px
-  font-size: 30px
-  padding: 4.5px
-  
+  .swiper
+    width: 550px
+    height: 100%
+    margin-left: 6rem
 
-  
+@media screen and (max-width: 400px)
+
+  .swiper
+    width: 550px
+    height: 100%
+    margin-left: 6rem
+
 
