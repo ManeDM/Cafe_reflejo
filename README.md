@@ -95,7 +95,7 @@ Es la cabecera general de la página, trabaja con un booleano y mediante la dire
 
 <h3 align="center">Hero-section</h3>
 <p align="center">
-En este componente muestra un primer plano dle producto y un frase de copy, no tiene funcionalidad.
+En este componente muestra un primer plano del producto y un frase de copy, no tiene funcionalidad.
 </p>
 
 <h3 align="center">Slider</h3>
