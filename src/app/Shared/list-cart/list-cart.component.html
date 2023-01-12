@@ -8,8 +8,7 @@
   <h4>Sub-Total: {{item.amount * item.price}}</h4>
   <span><a (click)="cart.reduceAmount(item); item.amount === 0 ? removeProduct(item) : ''"><i class="material-icons">delete</i></a></span>
 </div>
-<h5 class="total"><b>Total</b>: {{totalPrice}} </h5>
-<p class="message"><b>Importante</b>: revisa tu pedido y los costes antes de contactar con el vendedor.</p>
+<h5 class="total"><b>Total</b>: {{totalPrice}} </h5><p class="message"><b>Importante</b>: revisa tu pedido y los costes antes de contactar con el vendedor.</p>
 <h6 class="message_2">los costes de envio pueden variar dependiendo el lugar de destino.</h6>
 <button class="send" (click)="sendWhatsapp()">Enviar por Whatsapp</button>
-
+<button class="send_2" (click)="sendWhatsapp()">Enviar por Whatsapp</button>
