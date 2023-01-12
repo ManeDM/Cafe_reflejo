@@ -51,9 +51,19 @@ A su vez las funcionalidades de la pagina se dan desde dos servicos llamados "Ca
 </p>
 
 <p>
-Se crea un metodo privado para llamar la pokeAPI, luego se crea un segundo metodo que se encargara de llamar a los pokemons mediante el uso de "GET", este metodo nos devolvera cada uno de los objetos listados en la API, ya que la funcionalidad "MAP", nos permite mapear cada uno de los los objetos dentro de "results" que para este vendria a ser cada pokemon y los atributos que los componen.
+Primero se establece una varieble que llame a lista de productos, luego para trabajar con estos se crear una variable items que recupere las caracteristicas especficas de cada producto, nombre, peso, disponibilidad etc.
 
-Se crea un metodo publico "apiGetPokemons" que es el que nos permitira tomar los datos de un poquemon especifico y desde cualquier otro componente.
+Ya con esto se crean 5 funciones que interactuaran con los demas componentes del proytecto.
+
+addToCart() sirve para agregar productos al carrito, cada vez que se agrega uno se suma a la tarjeta ya pintada en el carrito.
+
+removeFromCart() sirve para eliminar productos del carrito, cada vez que se quita uno se elimina uno de la cantidad total de productos del carrito.
+
+totalPrice() es una funcion que calcula el precio total con base al precio y el subtotal de cada productos cargado al carrito.
+
+CartList() permite llamar las caracteristicas del los productos para hacer plantillas de html que reflejen una tarjeta de cada producto. 
+
+ reduceAmount() esta funcion permite reducir los subtotales para que las otras funciones puedan hacer los calculos.
 </p>
 
 <p align="center">
