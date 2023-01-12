@@ -85,7 +85,9 @@ skipLine() se encarga de enviar el mensaje al Wp del vendedor con los productos 
 
 <h3 align="center">Header</h3>
 
-<img src=https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/readme_img/Burgue_function.png width="400px" align="center"> 
+<p align="center">
+<img src=https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/readme_img/Burgue_function.png width="400px"> 
+</p>
 
 <p align="center">
 Es la cabecera general de la página, trabaja con un booleano y mediante la directiva *NgIf se abre o cierra el menu.
