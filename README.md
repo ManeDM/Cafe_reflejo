@@ -68,14 +68,16 @@ CartList() permite llamar las caracteristicas del los productos para hacer plant
 
 <p align="center">
 
-<img src="https://github.com/ManeDM/Pokedex/blob/main/src/assets/read_img/PokeService.jpeg" width="350px"> 
+<img src="https://github.com/ManeDM/Cafereflejo/blob/main/src/assets/readme_img/Service_wp.png" width="400px"> 
 
 </p>
 
 <p>
-Se crea un metodo privado para llamar la pokeAPI, luego se crea un segundo metodo que se encargara de llamar a los pokemons mediante el uso de "GET", este metodo nos devolvera cada uno de los objetos listados en la API, ya que la funcionalidad "MAP", nos permite mapear cada uno de los los objetos dentro de "results" que para este vendria a ser cada pokemon y los atributos que los componen.
+Se establece un variable que se iguale a la API de Whatsapp y otro varaible que se igual al codigo d eun salto de linea, luego de esto se crean dos funciones.
 
-Se crea un metodo publico "apiGetPokemons" que es el que nos permitira tomar los datos de un poquemon especifico y desde cualquier otro componente.
+skipLine() se encarga de implementar la variable para el salto de linea e igualarlo a un mensaje pre fijado.
+
+skipLine() se encarga de enviar el mensaje al Wp del vendedor con los productos que requiere el cliente.
 </p>
 
 <h2 align="center">Shared y sus componentes</h2>
