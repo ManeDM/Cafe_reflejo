@@ -136,7 +136,7 @@ Datos de contacto, no tiene funcionalidad.
 </p>
 
 <p align="center">
-En este componente s establecen cuatro funcionalidades.
+En este componente  establecen tres funcionalidades.
 
 deleteProduct() Permite borrar productos previamente cargados al carrito.
 
